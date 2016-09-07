@@ -1,5 +1,6 @@
 # Grav Specific
 .sass-cache
+backup/*
 composer.lock
 cache/*
 assets/*
