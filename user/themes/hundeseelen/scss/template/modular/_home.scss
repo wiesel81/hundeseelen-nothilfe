@@ -1,0 +1,52 @@
+// variables
+$text-padding:   0.5rem;
+$image-margin:      2rem;
+
+
+// styling
+.home {
+    background: $text-bg;
+    padding: $text-padding $content-padding;
+    /*@include breakpoint(desktop-only) {
+        text-align: center;
+    } */
+    float: left;
+    width: 100%;
+    
+    h2, h3, h4 {
+      color: $core-accent;
+    }
+    
+    .button {
+      float: right;
+    }
+
+    .align-left {
+        float: left;
+        margin-right: $image-margin;
+        @include breakpoint(desktop-only) {
+            float: none;
+            margin-right: 0;
+        }
+    }
+
+    .align-right {
+        float: right;
+        margin-left: $image-margin;
+        @include breakpoint(desktop-only) {
+            float: none;
+            margin-left: 0;
+        }
+    }
+    img {
+        border-radius: $border-radius;
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+    
+    p {
+      //float: left;
+      //margin: 0.5rem 0;
+      clear: both;
+    }
+}

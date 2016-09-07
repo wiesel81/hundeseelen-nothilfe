@@ -1,0 +1,10 @@
+---
+title: 'Wir über uns'
+---
+
+Die Tierliebe in die Wiege gelegt, begleiteten mich Tiere mein ganzes Leben. Es war mir stets eine unbeschreibliche Herzensangelegenheit zu helfen, wenn ein Tier in Not war. Schlimm war die Erkenntnis das Tierleid unermesslich ist, bitter das Gefühl ohnmächtig gegen dieses Elend zu sein. Inspiriert von wundervollen gleichgesinnten Menschen, begann ich vor einigen Jahren in einem Hundeauffanglager in Serbien zu helfen. Noch heute ist mir in Erinnerung, als mich die entsetzlichen Bilder der vielen verlorenen Hundeseelen aus diesem Lager erreichten. Verlorenes Leben welches sich nichts zu Schulden kommen hat lassen, als in diese Welt geboren zu sein. Ich sah mich in diesem Meer an Hunden versinken.
+Ich musste helfen. Wenigstens einige dieser Seelen sollten es in ein lebenswertes Leben schaffen. Das es mir möglich werden würde in einem solchen Ausmaß zu helfen, hätte ich nie zu denken gewagt. Wundervolle Menschen sind mir auf diesem Weg begegnet. Menschen die diesen erbarmungswürdigen Hundeseelen ermöglichten zu erfahren, wie sich Wertschätzung, Liebe, Wärme und Fürsorge anfühlt. Diese Menschen haben die langjährige Hilfe erst möglich gemacht. Ihnen gebührt ein großer Dank aus tiefstem Herzen.
+
+"Das Leben besteht aus lauter verpassten Gelegenheiten...",
+verpasse keine Gelegenheit das zu tun was Dein Herz Dir sagt...
+(Verfasser unbekannt)

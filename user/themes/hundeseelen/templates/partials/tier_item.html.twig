@@ -1,0 +1,81 @@
+<div class="list-item">
+
+    <div class="list-blog-header">
+        <!--<span class="list-blog-date">
+            <span>{{ page.date|date("d") }}</span>
+            <em>{{ page.date|date("M") }}</em>
+        </span>-->
+        {% if page.header.link %}
+            <h4>
+                {% if page.header.continue_link is not sameas(false) %}
+                <a href="{{ page.url }}"><i class="fa fa-angle-double-right"></i></a>
+                {% endif %}
+                <a href="{{ page.header.link }}">{{ page.title }}</a>
+            </h4>
+        {% else %}
+            <h4><a href="{{ page.url }}">{{ page.title }}</a></h4>
+        {% endif %}
+
+        {% if page.taxonomy.tag %}
+        <span class="tags">
+            {% for tag in page.taxonomy.tag %}
+            <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
+            {% endfor %}
+        </span>
+        {% endif %}
+
+
+
+    </div>
+
+    <div class="list-blog-padding">
+      {{ page.media.images|first }}
+      <div>
+        <p>
+          {% if page.header.steckbrief.geschlecht %}
+          <b>Geschlecht:</b> {{ page.header.steckbrief.geschlecht }}
+          <br />
+          {% endif %}
+          {% if page.header.steckbrief.alter %}
+          <b>Alter:</b> {{ page.header.steckbrief.alter }}
+          <br />
+          {% endif %}
+          {% if page.header.steckbrief.rasse %}
+          <b>Rasse:</b> {{ page.header.steckbrief.rasse }}
+          <br />
+          {% endif %}
+        </p>
+    {% if page.header.continue_link is sameas(false) %}
+        {{ page.content }}
+        {% if not truncate %}
+        {% set show_prev_next = true %}
+        {% endif %}
+    {% elseif truncate and page.summary != page.content %}
+        {{ page.summary }}
+        <p class="more"><a class="button" href="{{ page.url }}">Weiterlesen...</a></p>
+    {% elseif truncate %}
+        {% if page.summary != page.content %}
+            {{ page.content|truncate(550) }}
+        {% else %}
+            {{ page.content }}
+        {% endif %}
+        <!-- <p class="more"><a class="button" href="{{ page.url }}">Weiterlesen...</a></p> -->
+    {% else %}
+        {{ page.content }}
+        {% set show_prev_next = true %}
+    {% endif %}
+    {% if show_prev_next %}
+
+        <p class="prev-next">
+            {% if not page.isFirst %}
+                <a class="button" href="{{ page.nextSibling.url }}"><i class="fa fa-chevron-left"></i> Zurück</a>
+            {% endif %}
+
+            {% if not page.isLast %}
+                <a class="button" href="{{ page.prevSibling.url }}">Weiter <i class="fa fa-chevron-right"></i></a>
+            {% endif %}
+        </p>
+    {% endif %}
+      </div>
+    </div>
+</div>

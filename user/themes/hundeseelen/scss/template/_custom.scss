@@ -1,0 +1,129 @@
+// Your custom SCSS should be written here...
+
+.grav-lightslider {
+    .lSSlideOuter {
+        .lSPager.lSpg {
+            > li a {
+                z-index: 1;
+            }
+        }
+    }
+}
+
+#body > script:first-child + .grav-lightslider {
+  margin-top: -3rem;
+}
+
+// Modular Home
+@import "template/modular/home";
+
+#body, #sb-site {
+  background-color: $core-accent !important;
+}
+
+.fullwidth .content-wrapper {
+  padding: 1rem 3rem 0rem;
+}
+
+#breadcrumbs, section#body > p {
+  a {
+    color: darken($core-accent, 30%);
+    text-decoration: underline;
+  }
+  a[href$=".pdf"] {
+    background: url('../images/pdf.png') center left no-repeat;
+    padding-left: 28px;
+    line-height: 16px;
+  }
+  a[href$=".doc"] {
+    background: url('../images/doc.png') center left no-repeat;
+    padding-left: 28px;
+    line-height: 16px;
+  }
+  a[href^="http"] {
+    background: url('../images/ext.png') center left no-repeat;
+    padding-left: 20px;
+    line-height: 16px;
+  }
+  span {
+    padding: 0 !important;
+  }
+  i {
+    margin: 0 1rem;
+  }
+}
+
+section#body > p {
+  clear: both;
+  img {
+    float: left;
+    border-radius: 3px;
+    margin: 0 1rem 1rem 0;
+  }
+}
+
+.blog-content-list, .blog-content-item {
+  letter-spacing: normal;
+  #listing, #item {
+    width: 100%;
+  }
+  .list-item {
+    margin-bottom: 0;
+    float: left;
+    clear: both;
+    width: 100%;
+    border-bottom: 
+    a {
+      color: darken($core-accent, 30%);
+    }
+    .list-blog-header {
+      h4 a:hover {
+        color: darken($core-accent, 30%);
+        text-decoration: underline; 
+      }
+    }
+    .list-blog-padding {
+      img {
+        display: inline;
+        margin: 0 0 1rem 1rem;
+        float: right;
+      }
+      p.more {
+       float: right;
+       clear: both;
+      }
+      .prev-next {
+        margin-top: 2rem;
+      }
+      .button {
+        border: 0.1px solid $core-text;
+        color: $core-text;
+        background: $core-accent;   
+        &:hover { 
+          background: $core-text;
+          color: $core-accent;
+        }
+      }
+    }
+  }
+}
+.blog-content-list .homepage {
+  margin: 1rem;
+  line-height: 1.4;
+}
+/*
+.rrssb-buttons {
+    float: left;
+}
+.rrssb-buttons li a .rrssb-text {
+  font-family: $font-family-default;
+  letter-spacing: normal;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 1rem;
+  padding: 0rem 1rem;
+}
+.rrssb-buttons.large-format, .rrssb-buttons.large-format li {
+  width: 7rem !important;
+}
+*/

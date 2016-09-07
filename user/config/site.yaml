@@ -1,0 +1,22 @@
+title: 'Hundeseelen-Nothilfe e. V.'
+author:
+  name: 'Carina Brunbauer'
+  email: hundeseelen-nothilfe@hotmail.com
+taxonomies:
+  - category
+  - tag
+  - month
+metadata:
+  description: 'Wir sind seit Jahren im Tierschutz tätig und freuen uns seit April 2011 ein eingetragener Verein zu sein und unserem Projekt, einem Auffanglager in Belgrad/Serbien, weiterhin helfen zu können.'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+redirects:
+  /changelog: /blog/the-urban-jungle
+routes:
+  /something/else: /blog/focus-and-blur
+  '/another/one/(.*)': /blog/$1
+blog:
+  route: ''

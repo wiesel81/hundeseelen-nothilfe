@@ -1,0 +1,12 @@
+email: ing.michael.krenn@aon.at
+fullname: 'Ing. Michael Krenn'
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: 'true'
+    super: 'true'
+  site:
+    login: 'true'
+hashed_password: $2y$10$rMWEpVTQJy19laupm51A9.oIDsWzB.itUHrZPTZXHxHY2V2Z/f1vK
+language: de
